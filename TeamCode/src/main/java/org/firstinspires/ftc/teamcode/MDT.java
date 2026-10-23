@@ -20,10 +20,10 @@ public class MDT {
 
         _rStickX *= 1.1;
 
-        lf = MathLogic.Clamp(_Y - _X + _rStickX, -1, 1) * _maxSpeed;
-        lb = MathLogic.Clamp(_Y + _X + _rStickX, -1, 1) * _maxSpeed;
-        rf = MathLogic.Clamp(_Y - _X + _rStickX, -1 ,1) * _maxSpeed;
-        rb = MathLogic.Clamp(_Y + _X - _rStickX, -1, 1) * _maxSpeed;
+        lf = MathLogic.Clamp(_Y - _X - _rStickX, -1, 1) * _maxSpeed;
+        lb = MathLogic.Clamp(_Y + _X - _rStickX, -1, 1) * _maxSpeed;
+        rf = MathLogic.Clamp(_Y + _X + _rStickX, -1 ,1) * _maxSpeed;
+        rb = MathLogic.Clamp(_Y - _X + _rStickX, -1, 1) * _maxSpeed;
 
         allSpeeds[0] = lf;
         allSpeeds[1] = lb;
